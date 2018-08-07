@@ -30,15 +30,16 @@
     "url": "https://github.com/niklasmerz/cordova-plugin-fingerprint-aio/issues"
   },
   "homepage": "https://github.com/niklasmerz/cordova-plugin-fingerprint-aio#readme",
-  "dependencies": {
-    "cordova-plugin-add-swift-support": "^1.7.1"
-  },
-  "devDependencies": {
-    "cordova-paramedic": "git+https://github.com/apache/cordova-paramedic.git",
-    "cordova-plugin-xml": "^0.1.2",
-    "eslint": "^4.19.1",
-    "jasmine": "^2.8.0"
-  },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "4.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },  
   "scripts": {
     "test": "./node_modules/cordova-paramedic/main.js --plugin . --platform",
     "plugin-version": "cordova-plugin-xml setVersion"
